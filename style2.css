@@ -10,3 +10,29 @@ body {
 h1, h2, h3 {
     color: #ffdd57; /* Warm yellow headings */
 }
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+header, footer {
+    grid-column: span 2;
+    background-color: #333;
+    color: #ffdd57;
+    text-align: center;
+    padding: 15px;
+}
+
+aside {
+    background-color: #242424;
+    padding: 15px;
+    border: 1px solid #555;
+}
+
+main {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border: 1px solid #444;
+}
