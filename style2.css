@@ -1,0 +1,12 @@
+/* Base Styles for Dark Elegant Design */
+body {
+    font-family: 'Merriweather', serif; /* Elegant serif font */
+    margin: 0;
+    padding: 0;
+    background-color: #181818; /* Dark background */
+    color: #eee; /* Light text */
+}
+
+h1, h2, h3 {
+    color: #ffdd57; /* Warm yellow headings */
+}
