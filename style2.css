@@ -1,38 +1,96 @@
-/* Base Styles for Dark Elegant Design */
+/* Dark Elegant Design: Base Styling */
+
+/* Importing Google Fonts - 'Playfair Display' for a classic and elegant serif font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* Styling the body element */
 body {
-    font-family: 'Merriweather', serif; /* Elegant serif font */
-    margin: 0;
-    padding: 0;
-    background-color: #181818; /* Dark background */
-    color: #eee; /* Light text */
+    font-family: 'Playfair Display', serif; /* Applying an  serif font family */
+    background-color: #121212; /* dark background  */
+    color: #e0e0e0; /*  light gray text for  */
+    margin: 0; /* Removing default margin */
+    padding: 0; /* Removing default padding */
+    line-height: 1.7; /*  increasing line height  */
 }
 
+/* Styling headings (h1, h2, h3) */
 h1, h2, h3 {
-    color: #ffdd57; /* Warm yellow headings */
+    color: #ff7043; /* orange accents for headings */
+    text-shadow: 2px 2px 5px rgba(255, 112, 67, 0.4); /* Adding a  glow effect with shadow */
 }
+
+/* Styling anchor (link) elements */
+a {
+    color: #ff7043; /*  orange color for links */
+    text-decoration: none; /* Removing underline from links */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Styling hover state for links */
+a:hover {
+    color: #ffab91; /* Lighter orange for hover state */
+    text-shadow: 2px 2px 5px rgba(255, 171, 145, 0.6); /* Enhanced glow effect on hover */
+}
+
+/* Layout */
+
+/* Defining a grid layout for the container */
 .container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    padding: 20px;
+    display: grid; /* Enabling CSS grid for layout */
+    grid-template-columns: 2fr 1fr; /* Creating two columns: 2/3 and 1/3 width */
+    gap: 30px; /* Adding spacing between grid items */
+    padding: 40px; /* Adding padding around the container */
 }
 
+/* Styling the header and footer */
 header, footer {
-    grid-column: span 2;
-    background-color: #333;
-    color: #ffdd57;
-    text-align: center;
-    padding: 15px;
+    grid-column: span 2; /* Making header and footer span across both columns */
+    text-align: center; /* Center-aligning text */
+    background-color: #1e1e1e; /* Slightly lighter dark background */
+    color: #ff7043; /* Warm orange text for contrast */
+    padding: 20px 0; /* Vertical padding */
+    border-radius: 15px; /* Adding rounded corners for a soft look */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); /* Adding a deep shadow for depth */
 }
 
+/* Styling the sidebar (aside) */
 aside {
-    background-color: #242424;
-    padding: 15px;
-    border: 1px solid #555;
+    background: rgba(255, 112, 67, 0.1); /* Light orange overlay for a subtle contrast */
+    padding: 25px; /* Padding inside the box */
+    border-radius: 15px; /* Rounded corners for a soft look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
 }
 
+/* Styling the main content area */
 main {
-    background-color: #1e1e1e;
-    padding: 15px;
-    border: 1px solid #444;
+    background: rgba(30, 30, 30, 0.8); /* Dark semi-transparent background for emphasis */
+    padding: 25px; /* Padding inside the box */
+    border-radius: 15px; /* Rounded corners for a polished look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Stronger shadow for focus */
+}
+
+/* Dark Elegant Design: Animations */
+
+/* Styling buttons */
+button {
+    background: #ff7043; /* Warm orange background */
+    color: white; /* White text for contrast */
+    border: none; /* Removing default border */
+    padding: 12px 24px; /* Adding padding for button size */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Changing cursor to pointer for clickable indication */
+    font-size: 1rem; /* Setting font size for button text */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+/* Styling hover state for buttons */
+button:hover {
+    background: #ffab91; /* Lighter orange for hover state */
+    box-shadow: 0 4px 10px rgba(255, 112, 67, 0.6); /* Glow-like shadow for hover state */
+}
+
+/* Styling focus state for links */
+a:focus {
+    outline: 2px solid #ff7043; /* Adding a warm orange outline for focus */
+    outline-offset: 3px; /* Adding space between the outline and the element */
 }
