@@ -1,15 +1,32 @@
-/* Base Styles */
+/* Base styles for Modern Clean Design */
+
+/* Reset margins and padding */
 body {
-    font-family: 'Roboto', sans-serif; /* Modern font */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Light gray for a clean look */
-    color: #333; /* Dark gray text */
+    font-family: Arial, sans-serif; /* Use a clean, sans-serif font */
+    background-color: #f9f9f9; /* Light background for a clean look */
+    color: #333; /* Neutral text color */
 }
 
+/* Style for all headings */
 h1, h2, h3 {
-    color: #111; /* Strong contrast for headings */
+    color: #00509e; /* Dark blue color for headings */
+    text-align: center; /* Center-align headings */
+    margin-bottom: 10px; /* Add spacing below headings */
 }
+
+/* Style for links */
+a {
+    color: #007ac3; /* Bright blue for links */
+    text-decoration: none; /* Remove underline for cleaner look */
+}
+
+a:hover {
+    color: #003d73; /* Darker blue when hovered */
+    text-decoration: underline; /* Add underline on hover for accessibility */
+}
+
 /* Layout Styles */
 .container {
     display: grid;
@@ -37,19 +54,4 @@ main {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
-}
-/* Interactive Styles */
-a {
-    text-decoration: none;
-    color: #007BFF;
-}
-
-a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
-button:hover {
-    background-color: #0056b3;
-    color: #fff;
 }
