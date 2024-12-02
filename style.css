@@ -1,0 +1,12 @@
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray for a clean look */
+    color: #333; /* Dark gray text */
+}
+
+h1, h2, h3 {
+    color: #111; /* Strong contrast for headings */
+}
