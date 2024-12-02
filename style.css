@@ -38,3 +38,18 @@ main {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+/* Interactive Styles */
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
